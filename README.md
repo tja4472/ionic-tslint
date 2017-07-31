@@ -1,26 +1,36 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
-
-## How to use this template
-
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
+Created using blank starter template.
 ```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+ionic start ionic-tslint blank
 ```
+ionic-angular 3.6.0
 
-Substitute ios for android if not on a Mac.
-
+Using [tslint:recommended](https://github.com/palantir/tslint/blob/master/src/configs/recommended.ts) rule set.
+### tsconfig.json
+```json
+"noUnusedLocals": true,
+"noUnusedParameters": true,
+"strict": true,  
+```
+### tslint.json
+```json
+"extends": [
+"tslint:recommended"
+],
+```
+Overrides required for clean lint.
+```javascript    
+// "tslint:recommended" overrides
+// ------------------------------
+"member-access": [false],
+"no-consecutive-blank-lines": false,
+"no-console": [false],
+"object-literal-sort-keys": [false],
+"ordered-imports": [false],
+"quotemark": [true, "single"],
+"trailing-comma": [false],
+"typedef-whitespace": [false],
+"whitespace": [false]   
+```
+See also:
+- [tslint](https://github.com/palantir/tslint)
+- [tslint-eslint-rules](https://github.com/buzinas/tslint-eslint-rules)
