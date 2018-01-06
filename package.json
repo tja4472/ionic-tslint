@@ -2,7 +2,7 @@
   "name": "ionic-tslint",
   "version": "0.0.1",
   "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "homepage": "https://github.com/tja4472/ionic-tslint",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
